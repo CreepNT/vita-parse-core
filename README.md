@@ -20,6 +20,12 @@ python2 main.py core_file.psp2dmp homebrew_file.elf
 
 Note that `homebrew_file.elf` is an `.elf` file, not `.velf`, not `eboot.bin`. It's recommended that you build it with the `-g` gcc flag enabled to get better debugging information.
 
+To list data for all the threads (even non-crashing ones, i.e. if the dump was manually generated with REX/DEX) :
+
+```
+python2 main.py -A core_file.psp2dmp homebrew_file.elf
+```
+
 ## Example output
 
 ```
